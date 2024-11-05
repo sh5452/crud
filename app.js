@@ -1,15 +1,17 @@
-const crud=require('./crud')
+
 
 console.log('Hello nodejs..');
 
 
 
 
+const crud = require('./crud')
+
+const express = require('express')
 const body_parser = require('body-parser')
-const express=require('express');
-const { request } = require('http');
-const app=express
-const port=3000
+
+const app = express()
+const port = 3000
 app.use(body_parser.json())
 
 //GET
