@@ -60,7 +60,7 @@ const users = [
     }
 
     function post(user){
-        const new_user={...user, id:sequential_id++}
+        const new_user={...user, id:++sequential_id}
         users.push(new_user)
         return new_user
     }
